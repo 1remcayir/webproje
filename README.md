@@ -98,7 +98,7 @@ Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
 
 
 ###Contact / İletişim (Optional)
-*Project Maintainer: İREM ÇAYIR - MURAT ÜNSAL - iremgur780@gmail.com - muratunsal675@gmail.com
+*Project Maintainer: İREM ÇAYIR - MURAT ENES ÜNSAL - iremgur780@gmail.com - muratunsal675@gmail.com
 Found a bug? Open an issue.
 
-*Proje Sorumlusu: İREM ÇAYIR - MURAT ÜNSAL - iremgur780@gmail.com - muratunsal675@gmail.com. Hata bulursanız bir sorun bildirin.
+*Proje Sorumlusu: İREM ÇAYIR - MURAT ENES ÜNSAL - iremgur780@gmail.com - muratunsal675@gmail.com. Hata bulursanız bir sorun bildirin.
