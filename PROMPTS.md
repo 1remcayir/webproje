@@ -77,4 +77,3 @@ Lütfen analiz etmek istediğiniz `.pcap` dosyasını yükleyin ve "Analiz Et" b
 
 ---
 
-Bu prompt'lar, CLI (komut satırı arayüzü) veya gelecekteki web tabanlı UI'da kullanılmak üzere senaryo tabanlı çıktılar olarak uyarlanabilir. Başka eklememi istediğin özel durumlar veya dil seçenekleri varsa bildirebilirsin.
