@@ -68,4 +68,37 @@ Güvenlik analistlerinin olaylara hızlı müdahale etmesini sağlar; gelecekte 
 [GitHub – dpkt: Fast, simple packet creation / parsing](https://github.com/kbandla/dpkt)
 
 ---
+import os
+
+if __name__ == "__main__":
+    pcap_path = "C:\Users\irem\Desktop\proje\test_capture.pcap.pcapng"
+    report_path = "result_report.txt"
+
+    if not os.path.isfile(pcap_path):
+        print(f"Hata: Dosya bulunamadı -> {pcap_path}")
+        exit(1)
+
+    packets = load_pcap(pcap_path)
+    results = analyze_packets(packets)
+    generate_report(results, report_path)
+
+
+-load_pcap(pcap_path)
+Belirttiğin pcap dosyasını açar ve içindeki tüm paketleri okur.
+Dönen sonuç, paketlerin zaman damgası ve ham verilerini içeren bir liste.
+
+-analyze_packets(packets)
+Okunan paketleri analiz eder.
+XSS, SQL Injection ve güvensiz cookie gibi güvenlik açıklarını arar.
+Bulduğu şüpheli içerikleri bir sözlük (dict) içinde döner.
+
+-generate_report(results, report_path)
+Analiz sonuçlarını bir metin dosyasına yazar (rapor oluşturur).
+Dosya adı ve yolu report_path ile belirlenir.
+Bu satırlar birlikte çalışınca:
+-PCAP dosyasını okur,
+
+-İçerik güvenlik analizi yapar,
+
+-Bulunan sonuçları rapor dosyasına yazar.
 ![image](https://github.com/user-attachments/assets/70d21c50-9348-4887-aaa2-e7d107796cac)
