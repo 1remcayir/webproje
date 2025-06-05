@@ -92,8 +92,8 @@ def generate_report(results, output_file):
     print(f"Rapor {output_file} dosyasına kaydedildi.")
 
 if __name__ == "__main__":
-    pcap_path = "test_capture.pcap"   # Analiz edilecek pcap dosyası
-    report_path = "result_report.txt"  # Oluşturulacak rapor dosyası
+    pcap_path = "test_capture.pcap"  
+    report_path = "result_report.txt"  
 
     packets = load_pcap(pcap_path)
     results = analyze_packets(packets)
