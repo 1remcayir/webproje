@@ -27,7 +27,7 @@ def analyze_packets(packets):
             if tcp.dport == 80 or tcp.sport == 80:
                 try:
                     http = dpkt.http.Request(tcp.data)
-                    # XSS kontrolü: URI ve header
+                    
                     for pattern in xss_patterns:
                         if re.search(pattern, http.uri, re.IGNORECASE):
                             xss_found.append(http.uri)
@@ -35,7 +35,7 @@ def analyze_packets(packets):
                             if re.search(pattern, v, re.IGNORECASE):
                                 xss_found.append(v)
 
-                    # SQLi kontrolü: URI ve header
+                    
                     for pattern in sqli_patterns:
                         if re.search(pattern, http.uri, re.IGNORECASE):
                             sqli_found.append(http.uri)
@@ -43,7 +43,7 @@ def analyze_packets(packets):
                             if re.search(pattern, v, re.IGNORECASE):
                                 sqli_found.append(v)
 
-                    # İnsecure Cookie kontrolü
+                    
                     if 'cookie' in http.headers:
                         cookie = http.headers['cookie']
                         if 'secure' not in cookie.lower():
@@ -92,8 +92,8 @@ def generate_report(results, output_file):
     print(f"Rapor {output_file} dosyasına kaydedildi.")
 
 if __name__ == "__main__":
-    pcap_path = "test_capture.pcap"  
-    report_path = "result_report.txt"  
+    pcap_path = r"C:\Users\irem\Desktop\proje\test_capture.pcap"
+    report_path = "result_report.txt"
 
     packets = load_pcap(pcap_path)
     results = analyze_packets(packets)
