@@ -91,5 +91,5 @@ research/
 
 ## ✍️ Hazırlayan
 
-**Adınız Soyadınız**  
+**İREM ÇAYIR - MURAT ENES ÜNSAL**  
 **Web Geliştirme ve Güvenliği Araştırması - 2025**
