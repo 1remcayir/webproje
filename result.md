@@ -104,10 +104,13 @@ Bulduğu şüpheli içerikleri bir sözlük (dict) içinde döner.
 
 **generate_report(results, report_path)**
 Analiz sonuçlarını bir metin dosyasına yazar (rapor oluşturur).
-Dosya adı ve yolu report_path ile belirlenir.
+Dosya adı ve yolu report_path ile belirlenir.  
 Bu satırlar birlikte çalışınca:
-1.PCAP dosyasını okur,
-2.İçerik güvenlik analizi yapar,
-3.Bulunan sonuçları rapor dosyasına yazar.
+  
+  1.PCAP dosyasını okur,
+  
+  2.İçerik güvenlik analizi yapar,
+  
+  3.Bulunan sonuçları rapor dosyasına yazar.
 
 ![image](https://github.com/user-attachments/assets/70d21c50-9348-4887-aaa2-e7d107796cac)
