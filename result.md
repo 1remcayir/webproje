@@ -91,7 +91,7 @@ if __name__ == "__main__":
     # Analiz sonuçlarını rapor olarak kaydet
     generate_report(results, report_path)
 
-
+```
 
 -load_pcap(pcap_path)
 Belirttiğin pcap dosyasını açar ve içindeki tüm paketleri okur.
@@ -111,4 +111,5 @@ Bu satırlar birlikte çalışınca:
 -İçerik güvenlik analizi yapar,
 
 -Bulunan sonuçları rapor dosyasına yazar.
+
 ![image](https://github.com/user-attachments/assets/70d21c50-9348-4887-aaa2-e7d107796cac)
