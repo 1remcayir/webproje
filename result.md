@@ -68,19 +68,29 @@ Güvenlik analistlerinin olaylara hızlı müdahale etmesini sağlar; gelecekte 
 [GitHub – dpkt: Fast, simple packet creation / parsing](https://github.com/kbandla/dpkt)
 
 ---
+# PCAP Analiz Scripti - Ana Çalışma Kısmı
+
+```python
 import os
 
 if __name__ == "__main__":
-    pcap_path = "C:\Users\irem\Desktop\proje\test_capture.pcap.pcapng"
+    # Analiz edilecek PCAP dosyasının tam yolu
+    pcap_path = r"C:\Users\efekan\Desktop\Yeni klasör (2)\test_capture.pcap.pcapng"
+    # Oluşturulacak rapor dosyasının adı
     report_path = "result_report.txt"
 
+    # Dosyanın var olup olmadığını kontrol et
     if not os.path.isfile(pcap_path):
         print(f"Hata: Dosya bulunamadı -> {pcap_path}")
         exit(1)
 
+    # PCAP dosyasını yükle
     packets = load_pcap(pcap_path)
+    # Paketleri analiz et
     results = analyze_packets(packets)
+    # Analiz sonuçlarını rapor olarak kaydet
     generate_report(results, report_path)
+
 
 
 -load_pcap(pcap_path)
