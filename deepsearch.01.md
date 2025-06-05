@@ -26,6 +26,15 @@ Bu proje, web uygulaması geliştirme süreçlerinde oluşabilecek güvenlik aç
 
 ---
 
+### 📄 İstenen Çıktı Formatı
+
+1. **Kısa ve öz başlık:** Her teknik veya trend için tanımlayıcı bir isim.
+2. **Açıklama (2-3 cümle):** Nasıl çalıştığı, ne olduğu ve neden önemli olduğu.
+3. **2025 etkisi:** Yakın gelecekteki potansiyel etkiler ve uygulama senaryoları.
+4. **Kaynak:** Güvenilir referans (makale, sunum, uzman görüşü, blog, GitHub repo, vb.)
+5. **Biçim:** Sonuçlar numaralandırılmış ve açıklayıcı olacak şekilde sıralanmalı.
+
+---
 
 ### 🚫 Kısıtlamalar
 
